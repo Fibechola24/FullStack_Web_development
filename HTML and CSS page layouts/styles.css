@@ -1,0 +1,25 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper {
+  margin: 10px 10px 10px 10px;
+}
+#logo-div {
+  width: 100%;
+  min-height: 50px;
+  background-color: lightgray;
+  padding-left: 2%;
+  line-height: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#nav-div {
+  width: 100%;
+  min-height: 50%;
+  line-height: 40px;
+  background-color: lightgray;
+  text-align: center;
+}
