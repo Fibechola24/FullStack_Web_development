@@ -37,32 +37,29 @@
   margin-bottom: 10px;
 }
 
-.clearfix .content{
-    
-    background-color: lightgray;
-    min-height: 400px;
-    float: left;
-    line-height: 400px;
-    text-align: center;
+.clearfix .content {
+  background-color: lightgray;
+  min-height: 400px;
+  float: left;
+  line-height: 400px;
+  text-align: center;
 }
-.clearfix .content:nth-child(1){
-    width: 19%;
+.clearfix .content:nth-child(1) {
+  width: 19%;
 }
-.clearfix .content:nth-child(2){
-    
-    width: 60%;
-    margin-left: 10px;
-    margin-right: 10px;
+.clearfix .content:nth-child(2) {
+  width: 60%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-.clearfix .content:nth-child(3){ 
-   width: 19%;
+.clearfix .content:nth-child(3) {
+  width: 19%;
 }
 
-.footer{
-    width: 100%;
-    background-color: lightgray;
-    min-height: 50px;
-    line-height: 50px;
-    text-align: center;
-
+.footer {
+  width: 100%;
+  background-color: lightgray;
+  min-height: 50px;
+  line-height: 50px;
+  text-align: center;
 }
