@@ -1,4 +1,8 @@
 /*default styles to make each box visible*/
+*{
+    box-sizing: border-box;
+}
+
 .box {
   font-size: 100px;
   text-align: center;
@@ -45,5 +49,5 @@
 
 .box{
     width: 33.3333333%;
-    margin: 10px;
+    border: 10px solid mistyrose;
 }
