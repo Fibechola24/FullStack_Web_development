@@ -3,7 +3,6 @@
   font-size: 100px;
   text-align: center;
   text-shadow: 4px 4px 0 rgba (0, 0, 0, 0, 1);
-  padding: 10px;
 }
 /*color for each boy*/
 .box1 {
@@ -38,6 +37,13 @@
   display: flex;
   border: 10px solid goldenrod;
   /*height: 100vh;*/
-  min-height: 100vh;
+  height: 100vh;
+  /* flex-direction: row; */
+  flex-wrap:wrap;
   flex-direction: row;
+}
+
+.box{
+    width: 33.3333333%;
+    margin: 10px;
 }
