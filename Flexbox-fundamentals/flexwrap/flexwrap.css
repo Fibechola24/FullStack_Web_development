@@ -37,17 +37,35 @@
   background-color: rgb(143, 149, 141);
 }
 
+
+/* flex wrap 
 .container {
   display: flex;
   border: 10px solid goldenrod;
   /*height: 100vh;*/
-  min-height: 100vh;
-  /* flex-direction: row; */
+  /*min-height: 100vh;
+  /* flex-direction: row;
   flex-wrap:wrap;
   flex-direction: row;
 }
+
 
 .box{
     width: 33.3333333%;
     border: 10px solid mistyrose;
 }
+*/
+
+.container{
+  display: flex;
+}
+.box{
+  flex: 1;
+}
+
+.box7{
+  order: -1;
+} 
+.box8{
+  order: -2;
+} 
