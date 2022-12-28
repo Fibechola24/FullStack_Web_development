@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsiveness</title>
+    <link rel="stylesheet" href="responsive-view.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="top">Mobile View Responsiveness</header>
+      <nav class="flex-nav">
+        <a href="#" class="toggleNav"> =Menu</a>
+        <ul>
+          <li><a href="">Nav 1</a></li>
+          <li><a href="">Nav 2</a></li>
+          <li><a href="">Nav 3</a></li>
+          <li><a href="">Nav 4</a></li>
+          <li><a href="">Nav 5</a></li>
+          <li><a href="">Nav 6</a></li>
+          <li class="social">
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+          </li>
+          <li class="social">
+            <a href="#"><i class="fa fa-amazon"></i></a>
+          </li>
+          <li class="social">
+            <a href="#"><i class="fa fa-apple"></i></a>
+          </li>
+          <li class="social">
+            <a href="#"><i class="fa fa-twitter-square"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <img src="https://picsum.photos/seed/picsum/1000/600" alt="" />
+      </section>
+
+      <section class="details">
+        <p>A demo of responsive mobile view</p>
+        <p>Sign up today for more responsive design</p>
+      </section>
+
+      <section class="signup">
+        <form action="" class="signup">
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Email Address" />
+          <input type="submit" value="Sign me up!" />
+        </form>
+      </section>
+
+      <footer>
+        <p>&copy;Fibe24</p>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $('toggleNav').on('click', function () {
+          $('.flex-nav ul').slideToggle();
+        });
+      });
+    </script>
+  </body>
+</html>
