@@ -1,0 +1,32 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body {
+    font-family: sans-serif;
+    margin: 0;
+   /* background-image: linear-gradient(260deg, #59a2d3, 50%, #b26ac1 100%);*/
+   margin: 20px;
+   background: rgb(250, 247, 247);
+  }
+header{
+    display: grid;
+
+    justify-items: center;
+    justify-content: center;
+    min-height: fit-content;
+    
+}
+.nav-bar ul{
+    border: 1px solid black;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: rgb(20, 1, 1);
+    color: white;
+    
+}
