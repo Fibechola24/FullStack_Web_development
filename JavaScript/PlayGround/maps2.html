@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maps</title>
+  </head>
+  <body>
+    <ul class="prizes"></ul>
+    <script>
+
+const person1 = {
+      name: 'wes',
+      age: 200
+    };
+
+
+      const myMap = new Map();
+      // .set()
+      myMap.set("name", "wes");
+      myMap.set(100, "This is a number");
+      myMap.set(person1, "Really Cool");
+      console.log(myMap);
+
+
+      const score = 200;
+      const prizes = new Map();
+      prizes.set(100, 'Bear');
+    prizes.set(200, 'Duck');
+    prizes.set(300, 'Car');
+
+    console.log(`you win a ${prizes.get(score)}`);
+
+// select that ul. loop over the map and print the content
+
+//use map if we need to maintain the order 
+const ul = document.querySelector('.prizes');
+    for (const [points, prize] of prizes) {
+      const li = `<li>${points} - ${prize}</li>`;
+      ul.insertAdjacentHTML('beforeend', li);
+    }
+
+    /*
+    JSON anytime you want to send object to another e.g server, we do it using JSON. JSON.stringify and when the receiver decodes it using JSON.parse
+    */
+
+    </script>
+  </body>
+</html>
