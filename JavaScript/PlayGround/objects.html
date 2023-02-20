@@ -9,10 +9,11 @@
 </head>
 
 <body>
-  <input type="text" name="first" value="wes">
+  <input type="text" name="first" value="Victor">
 
   <script src="https://unpkg.com/lodash"></script>
   <script>
+
     const age = 100;
     const wes = {
       age,
@@ -50,7 +51,7 @@
     let name1 = 'wes';
     let name2 = 'wes';
 
-    console.log(name1 === name2);
+    console.log(name1 === name2);  //check both the type and value
     name1 = 'scott';
     console.log(name1 === name2);
     // update name1 to be what is name2
@@ -70,15 +71,16 @@
     const person2 = {
       first: 'wes',
       last: 'bos'
-    };
+    };  //when comparing objects its by reference and not by contents
 
     // const person3 = person1;
     // person3.first = 'Larry';
     // console.log(person3.first);
     // console.log(person1.first);
-    // const person3 = { ...person1 };
+    // const person3 = { ...person1 };     //this is the way to copy an object using a spread
+
     const person3 = _.cloneDeep(person1);
-    person3.first = 'Larry';
+    person3.first = 'Larry';     // deep clone or complete copy of all the objects
 
     person3.clothing.shirts = 100;
 
@@ -94,11 +96,14 @@
       oyster: 15,
     };
 
-    const inventory = {
+    const inventory = {  // merging objects using spreading
       ...meatInventory,
       ...veggieInventory,
     };
 
+
+//reference vs value
+ 
     function doStuff(data) {
       data = 'something else';
       console.log(data);

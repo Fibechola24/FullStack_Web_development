@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+    <link rel="stylesheet" href="../20 - The DOM/styles.css" />
+    <script src="https://unpkg.com/lodash"></script>
+  </head>
+  <body>
+    <input type="text" name="first" value="Victor">
+    <script>
+      const age = 100;
+      const person = {
+        age,
+        name: "Victor",
+        "really-cool": true,
+
+        clothing: {
+          shirts: 20,
+          pants: 2,
+        },
+
+        sayHello: function (greeting = 'Hey'){
+            return `${greeting} ${this.name}`;
+        } 
+      };
+
+      person.job = "Web-developer";
+      person.age = 29;
+
+      const nameInput = document.querySelector('[name="first"]');
+    const name = nameInput ? nameInput.value : '';
+
+      console.log(name) ;
+
+    //   console.log(person);
+
+    let name1 = 'wes';
+    let name2 = 'wes';
+
+    const person1 = {
+      first: 'wes',
+      last: 'bos',
+      clothing: {
+        shirts: 10,
+        pants: 2
+      }
+    };
+    const person2 = {
+      first: 'wes',
+      last: 'bos'
+    };  //when comparing objects its by reference and not by contents
+
+    //objects and arrays are accessed by reference. 
+
+    const person3 = { ...person1 }; 
+    const meatInventory = {
+      bacon: 2,
+      sausage: 3,
+      oyster: 10,
+    };
+
+    const veggieInventory = {
+      lettuce: 5,
+      tomatoes: 3,
+      oyster: 15,
+    };
+
+    const inventory = {  // merging objects using spreading
+      ...meatInventory,
+      ...veggieInventory,
+    };
+    </script>
+  </body>
+</html>
