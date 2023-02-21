@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../20 - The DOM/styles.css" />
+    <title>Arrays</title>
+  </head>
+  <body>
+    <script>
+      const names = ["Victor", "kait", "Stella"];
+
+      console.log(names[0]);
+      console.log(names.length);
+      console.log(names[names.length - 1]); //get the last item in the array
+
+      names.push("Okpanachi");
+
+      const names2 = [...names, "Okpanachi"];
+      names.unshift("Linda");
+      names.unshift("Fibechola");
+
+      const names4 = ["Happy", ...names];
+      console.log(names4); //add to the front
+
+     
+
+
+      
+    </script>
+  </body>
+</html>

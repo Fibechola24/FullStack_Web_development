@@ -20,11 +20,15 @@
 
     names.push('lux');
     console.log(names);
-    const names2 = [...names, 'lux'];
-    names.unshift('poppy');
+    const names2 = [...names, 'lux']; // create a copy and then add an item to the new copy
+
+    names.unshift('poppy'); //add to the front of the array
+
     console.log(names);
-    const names3 = ['poppy', ...names];
+    const names4 = ['poppy', ...names];
     console.log(names3);
+
+     //add items to the middle using the spread method
 
     const bikes = ['bianchi', 'miele', 'panasonic', 'miyata'];
     const newBikes = [
