@@ -194,7 +194,7 @@
     const cleanPeople = people.map(function (person) {
       // timestamp
       const birthday = new Date(person.birthday).getTime();
-      // now timestamp
+      // now timestamp.
       const now = Date.now();
       const age = Math.floor((now - birthday) / 31536000000);
       // get their birthday
